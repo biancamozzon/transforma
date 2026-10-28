@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Si usás este trabajo, citá la tesis y este repositorio."
+title: "TRANS-FORMA: herramientas de prefiguración (Cierres, Uniones y Curva libre)"
+type: software
+version: 1.0.0
+authors:
+  - family-names: Mozzon
+    given-names: Bianca
+abstract: "Simulación del paso de una lámina plana a una superficie espacial por unión perimetral y sutura de caladuras. Se encuadra en la tesis de la Maestría en Lógica y Técnica de la Forma (FADU-UBA), investigación iniciada en 2012 y defendida en 2015."
+preferred-citation:
+  type: thesis
+  title: "TRANS-FORMA. De la superficie plana a la superficie espacial"
+  authors:
+    - family-names: Mozzon
+      given-names: Bianca
+  thesis-type: "Tesis de Maestría en Lógica y Técnica de la Forma"
+  department: "Facultad de Arquitectura, Diseño y Urbanismo"
+  institution:
+    name: "Universidad de Buenos Aires"
+  year: 2015

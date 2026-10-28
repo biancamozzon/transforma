@@ -1,0 +1,31 @@
+# TRANS-FORMA · © Bianca Mozzon (Blanca Mozzon) · compila la app de escritorio para Windows y Linux
+# Se corre a mano desde la pestaña Actions de GitHub («Run workflow») o al subir una etiqueta v1.0.0, v1.1.0…
+name: Compilar TRANS-FORMA
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+jobs:
+  compilar:
+    strategy:
+      matrix:
+        include:
+          - os: windows-latest
+            destino: --win nsis portable --x64 -c.win.signAndEditExecutable=true
+          - os: ubuntu-latest
+            destino: --linux AppImage --x64
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci || npm install
+      - run: npx electron-builder ${{ matrix.destino }} --publish never
+      - uses: actions/upload-artifact@v4
+        with:
+          name: TRANS-FORMA-${{ matrix.os }}
+          path: |
+            dist/*.exe
+            dist/*.AppImage
+          if-no-files-found: error

@@ -1,0 +1,82 @@
+{
+  "name": "transforma",
+  "version": "1.0.0",
+  "description": "TRANS-FORMA: de la superficie plana a la superficie espacial. Cierres, Uniones y Curva libre.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:linux": "electron-builder --linux",
+    "build:win": "electron-builder --win",
+    "build:all": "electron-builder --linux --win"
+  },
+  "author": {"name": "Bianca Mozzon (Blanca Mozzon)"},
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^45.1.0",
+    "electron-builder": "^26.18.0"
+  },
+  "productName": "TRANS-FORMA",
+  "private": true,
+  "build": {
+    "appId": "com.transforma.app",
+    "productName": "TRANS-FORMA",
+    "copyright": "© 2015–2026 Bianca Mozzon (Blanca Mozzon)",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "package.json",
+      "www/**",
+      "build/icon.png"
+    ],
+    "asar": true,
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "category": "Graphics",
+      "icon": "build/icon.png",
+      "artifactName": "TRANS-FORMA-${version}-linux-x86_64.${ext}",
+      "syncDesktopName": true
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "TRANS-FORMA",
+      "artifactName": "TRANS-FORMA-${version}-windows-instalador.${ext}"
+    },
+    "portable": {
+      "artifactName": "TRANS-FORMA-${version}-windows-portable.${ext}"
+    },
+    "publish": null
+  },
+  "desktopName": "transforma.desktop"
+}
