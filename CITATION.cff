@@ -1,8 +1,11 @@
 cff-version: 1.2.0
 message: "Si usás este trabajo, citá la tesis y este repositorio."
-title: "TRANS-FORMA: herramientas de prefiguración (Cierres, Uniones y Curva libre)"
+title: "TRANS-FORMA: herramientas de prefiguración (Cierres, Curva libre, Unión por tramos, Inversa y Uniones)"
 type: software
-version: 1.0.0
+version: 2.0.0
+license: PolyForm-Noncommercial-1.0.0
+repository-code: "https://github.com/biancamozzon/transforma"
+url: "https://biancamozzon.github.io/transforma/"
 authors:
   - family-names: Mozzon
     given-names: Bianca

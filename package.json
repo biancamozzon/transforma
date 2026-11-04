@@ -1,7 +1,7 @@
 {
   "name": "transforma",
-  "version": "1.0.0",
-  "description": "TRANS-FORMA: de la superficie plana a la superficie espacial. Cierres, Uniones y Curva libre.",
+  "version": "2.0.0",
+  "description": "TRANS-FORMA: de la superficie plana a la superficie espacial. Cierres, Curva libre, Unión por tramos, Inversa y Uniones.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -10,7 +10,7 @@
     "build:all": "electron-builder --linux --win"
   },
   "author": {"name": "Bianca Mozzon (Blanca Mozzon)"},
-  "license": "UNLICENSED",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "devDependencies": {
     "electron": "^45.1.0",
     "electron-builder": "^26.18.0"

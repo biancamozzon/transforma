@@ -1,6 +1,6 @@
 
 
-/* TRANS-FORMA · Curva libre — del dibujo a la entrada del motor (misma función en la página y en node).
+/* TRANS-FORMA · © Bianca Mozzon (Blanca Mozzon) · Curva libre — del dibujo a la entrada del motor (misma función en la página y en node).
    op: 'A' unión del borde · 'B' solo sutura · 'C' sutura + unión en la misma lámina · 'D' dos láminas.
    Regla: c(s_A + t) ≡ c(s_A − t), t ∈ [0, ext], con ext = extensión · P/2. B siempre a P/2 de A. */
 (function (root) {

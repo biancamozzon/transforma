@@ -1,4 +1,4 @@
-/* TRANS-FORMA · Curva libre — modelo de curva (JS puro; corre en la página y en node).
+/* TRANS-FORMA · © Bianca Mozzon (Blanca Mozzon) · Curva libre — modelo de curva (JS puro; corre en la página y en node).
    Curva cerrada = puntos de control + marca de punta por punto.
    Sin puntas: Catmull-Rom centrípeta periódica. Con puntas: un tramo Catmull-Rom abierto entre puntas consecutivas
    (extremos por reflexión, igual que catmullRom del motor). Así la S de control (puntas en A y B) es exactamente la del artefacto. */

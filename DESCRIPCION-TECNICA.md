@@ -258,3 +258,49 @@ d8dec0d44294cd85788e506506f9ca805d170d9455a526717544272494c34648  www/curva-libr
 dcb24993cb3784fae47560f719484fb553a3328a9f3576dd9e73c23d0604b052  www/uniones.html
 ```
 
+
+## 14. Versión 2.0.0 (4 de noviembre de 2026)
+
+La sección 13 identifica los archivos de la versión 1.0.0, publicada el 28 de octubre de 2026 (commit `bd0aa401ff6c5a8e8318655b0ca3a4f7e4600639`); esas huellas no se modifican y quedan como registro de aquella publicación. La versión 2.0.0 cambia lo siguiente:
+
+- **Licencia.** Todo el repositorio pasa a la licencia **PolyForm Noncommercial 1.0.0** (`LICENSE`, con los avisos `Required Notice` a nombre de la autora). El uso comercial requiere una licencia aparte de la autora (`USO-Y-LICENCIA.md`). La versión 1.0.0 se había publicado sin licencia de uso.
+- **Herramientas (desarrollo de la autora, posterior a la tesis).** La página (`docs/` y `www/`) reúne cinco categorías de generación en una sola ventana: Cierres, Curva libre (clases A a F; la F, una caladura con una lámina chica suturada a ella), Unión por tramos (dos tramos del borde de igual longitud unidos como una cremallera, en 1 a 3 láminas), Inversa (del volumen a una lámina plana de borde curvo, por clases) y Uniones. Se suman los puntos A, B, C y D movibles sobre el volumen, la disposición para pantallas de laptop y los bordes a color con aviso de cruces. Los motores de Cierres y Uniones son los de la versión 1.0.0.
+- **Archivos.** `docs/index.html` y `www/index.html` contienen las cinco herramientas; se agregan `tramos-v2.js`, `inversa-clases-3.js` y `tf-puntos-5.js` (Unión por tramos, Inversa y los puntos movibles) y se quitan `cierres.html`, `uniones.html` y `curva-libre.html`, que ahora están dentro de `index.html`. La terminal sigue con el motor de la 1.0.0; se agrega la firma de la autora en cuatro archivos que no la tenían (solo cambia un comentario).
+- **Verificación.** La S de control en Cierres, Curva libre y Uniones da estiramiento medio 0,78 %, p95 2,38 %, pico 23,4 % y hueco 0,0005 h, con 863 vértices, igual que en la versión 1.0.0 (navegador sin conexión a internet, 4 de noviembre de 2026).
+
+Huellas SHA-256 de los archivos de la versión 2.0.0, calculadas sobre el contenido del repositorio sin este documento:
+
+```
+078de96cd8e86f70ecb005fb84caef2f37497ac2a603087b09b29a00c4afce00  .github/workflows/compilar.yml
+4e0f9c6be4eefef22f14b80bf3b8744006e6989a0156f2861c35cb4720314c6f  CITATION.cff
+adb741083f1ff4006b3d21dadfa5c5ef1315f89f1e21b7879b27c2b484423156  LEEME.md
+10b9d558d75ce387876aee0f4f4dacbbbbaf87eea3789da11e1a8617677dfd05  LICENSE
+5ae2a6e8bd934e2d86456fb00544f9819b3934b4d588ccc290b23776a1cc5e15  README.md
+8d7b8f6ec5fccb8fdeecac226222dcf4c1af6068e485d97ab07abdfe583cabea  USO-Y-LICENCIA.md
+1e642b553bddf7f4121af9e2f2a0376525c0b23b664feed721aaeecde53904c5  build/icon.png
+b5aad211ba6c3fca641030e900abefde8d753c134cd4393c6c74df23f237cc70  build/icon.svg
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  docs/.nojekyll
+a56b0d3477bbb66f79b8f5b4def70f41dba1923566ca89f7310b6c9bbd9ae9c7  docs/index.html
+752053f2912c4c809474c0a242d350d9c7ddb456da8cfeae26d21bf0018d8df2  docs/inversa-clases-3.js
+1d71a13c5f665bb1d4c2ad4379f5febf002a4e97dc2fe102418ad34953014e10  docs/tf-puntos-5.js
+1beb542f7e137923dfceb19b20db15788e243dd78515ccf5de2db477151fb9e4  docs/tramos-v2.js
+2b22d1422a9c81e097b8557aad4c2a59b5e351833209e67019b84a1b2d4449c5  main.js
+d03017832c9b10e75485ab531be1ef8ac4fbb88952afc0ecb0a8bdeec04b6032  package-lock.json
+d7acf4bcaf91b6eb16d4f4cc424af9f3a09fdf7f2da0b2f61ea5e436412f478a  package.json
+43c6e9f8a43e935a4f8518bb2bbf71f3b02db101680d39b92ad818448c431fb4  preload.js
+adb741083f1ff4006b3d21dadfa5c5ef1315f89f1e21b7879b27c2b484423156  terminal/LEEME.md
+3758dcd3d8bf09305a819e42309f4330fe8642ba27ba01d5e7f47a3fe41b3bc6  terminal/lib/cierres/core.js
+231ea9ff9e4c783ed3239641f8e6420fb2df23c9fc6076e2c0737ac5461c478b  terminal/lib/cierres/figuras.js
+e22b665cbf869f182381de9cdf9b07456de957104252a0cb318b7779c695e68c  terminal/lib/curva/core_curva.js
+c08e832a21c96d2de6797f53a52f41881ba36b8d1bc6864cb799aba2cb5815ef  terminal/lib/curva/curve.js
+90a1572a2452d9e593dd22f8dfe4d7a43361574e80432180adb79c13c58906c3  terminal/lib/curva/prep.js
+816dffcd275b7e2e59ef667960e92c182546df5beccfc70499dbd06f00d3c9e1  terminal/lib/tf-geom.js
+fe58484b24523db0e9a67f457216eae0352c1648123f50216de1e2567d9e2ccb  terminal/lib/uniones/core_curva.js
+eb7dacc7b89e175554b2cc7a3ceb0c42867696ed3596fa74ebd60376a7800b3f  terminal/lib/uniones/curve.js
+90a1572a2452d9e593dd22f8dfe4d7a43361574e80432180adb79c13c58906c3  terminal/lib/uniones/prep.js
+ef657d9e61227aa10d2a49400687c912e43e132d620ebca7a4a479026081cfe0  terminal/transforma.js
+a56b0d3477bbb66f79b8f5b4def70f41dba1923566ca89f7310b6c9bbd9ae9c7  www/index.html
+752053f2912c4c809474c0a242d350d9c7ddb456da8cfeae26d21bf0018d8df2  www/inversa-clases-3.js
+1d71a13c5f665bb1d4c2ad4379f5febf002a4e97dc2fe102418ad34953014e10  www/tf-puntos-5.js
+1beb542f7e137923dfceb19b20db15788e243dd78515ccf5de2db477151fb9e4  www/tramos-v2.js
+```
