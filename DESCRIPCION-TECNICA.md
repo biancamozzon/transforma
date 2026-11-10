@@ -304,3 +304,55 @@ a56b0d3477bbb66f79b8f5b4def70f41dba1923566ca89f7310b6c9bbd9ae9c7  www/index.html
 1d71a13c5f665bb1d4c2ad4379f5febf002a4e97dc2fe102418ad34953014e10  www/tf-puntos-5.js
 1beb542f7e137923dfceb19b20db15788e243dd78515ccf5de2db477151fb9e4  www/tramos-v2.js
 ```
+
+
+## 15. Versión 2.1.0 (10 de noviembre de 2026)
+
+Las secciones 13 y 14 identifican los archivos de las versiones 1.0.0 y 2.0.0; esas huellas no se modifican y quedan como registro de aquellas publicaciones. La versión 2.1.0 mantiene la licencia PolyForm Noncommercial 1.0.0 y cambia lo siguiente (desarrollo de la autora, posterior a la tesis):
+
+- **Cierres.** En la media gota (S), el inicio A se desliza por el contorno sin deformar la curva, como en las demás figuras; las dos puntas quedan como vértices de la lámina. Con A en la punta y sin C ni D, el cálculo es el de siempre.
+- **Curva libre** (`curva-g14.js`, que reemplaza a la página de Curva libre incrustada en `index.html`). Clases A a G. D con lámina 2 propia; F por caladura (cada una con lámina chica o sutura propia); G, el criterio de F en cada una de las dos láminas. Mano alzada por puntos, forma canónica por tramos, ventana 2D con zoom, tramos sueltos con su figura en tenue, encuadrar todo, deshacer y rehacer, y «OK» que une los extremos que casi se tocan. La gota conóidica abre con las proporciones de la tesis y la lemniscata por tramos pasa por el cruce.
+- **Interfaz.** `tf-puntos-7.js` (puntos A, B, C y D movibles en el volumen; en D y G, los puntos de la lámina 2 se mueven con los puntos blancos y las flechas) reemplaza a `tf-puntos-5.js`. `tf-movil2.js` agrega la disposición para pantalla de celular (hasta 820 px de ancho).
+- **Archivos.** `docs/` y `www/` pasan de tres a cinco archivos junto a `index.html`: `curva-g14.js`, `tramos-v2.js`, `inversa-clases-3.js`, `tf-puntos-7.js` y `tf-movil2.js`. Se quita `tf-puntos-5.js`. `tramos-v2.js` e `inversa-clases-3.js` son los mismos de la versión 2.0.0. La terminal (`terminal/`) no cambia: sigue con el motor de la versión 1.0.0.
+- **Verificación.** Con el conjunto armado (navegador sin conexión a internet, 10 de noviembre de 2026): las cinco herramientas cargan sin errores de consola y sin pedidos a internet; la S de control en Cierres da estiramiento medio 0,78 %, p95 2,38 % y pico 23,4 %, igual que en las versiones anteriores. Los archivos de curva, de puntos y de celular se habían verificado antes, en las sesiones de trabajo (cálculos de la S en Curva libre y de las clases F y G). No se probó la app de escritorio ni la terminal de esta versión.
+
+Huellas SHA-256 de los archivos de la versión 2.1.0, calculadas sobre el contenido del repositorio sin este documento:
+
+```
+078de96cd8e86f70ecb005fb84caef2f37497ac2a603087b09b29a00c4afce00  .github/workflows/compilar.yml
+4429a03c80b5860678e931201074f9bfa7ac37a6c44cb146f46373a1eb56334b  CITATION.cff
+1151dcd71346c624456b872b5f653fe1a79332f87bfb34c0261969b33b29ea73  LEEME.md
+10b9d558d75ce387876aee0f4f4dacbbbbaf87eea3789da11e1a8617677dfd05  LICENSE
+496d2295983dd0b9db4569ec5487576038101f869725a6f0f60c1f9f4fa203cf  README.md
+2fd34a5cde8d977d976a64723c8308abdf4d75d6f23e85121343c91c9a765ecd  USO-Y-LICENCIA.md
+1e642b553bddf7f4121af9e2f2a0376525c0b23b664feed721aaeecde53904c5  build/icon.png
+b5aad211ba6c3fca641030e900abefde8d753c134cd4393c6c74df23f237cc70  build/icon.svg
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  docs/.nojekyll
+65828a92bdd7e05d70e8ee3c5d49e8f69694168fb60aad0b37e00ee43a22efb9  docs/curva-g14.js
+84fa20d6f20355db243d35301539fc192005d3295916ea52c501d20893c5a939  docs/index.html
+752053f2912c4c809474c0a242d350d9c7ddb456da8cfeae26d21bf0018d8df2  docs/inversa-clases-3.js
+ed1d9db36711fafa89b5a44d1f98d01e4b9cc53f99392493a36059415316d83e  docs/tf-movil2.js
+527bf042cec25325033043f0d0fec6a570c4c4168a74ebd218077e01ca9e7e47  docs/tf-puntos-7.js
+1beb542f7e137923dfceb19b20db15788e243dd78515ccf5de2db477151fb9e4  docs/tramos-v2.js
+2b22d1422a9c81e097b8557aad4c2a59b5e351833209e67019b84a1b2d4449c5  main.js
+e5a4b0e368fe9b0e35e80c12060ec2ebdc6464f1cb89fc5f033d158260a15bc9  package-lock.json
+81e176bfdab9ebddcf5d24475c43e19dcc310333bc0f3301e4774ffb5ffa8154  package.json
+43c6e9f8a43e935a4f8518bb2bbf71f3b02db101680d39b92ad818448c431fb4  preload.js
+1151dcd71346c624456b872b5f653fe1a79332f87bfb34c0261969b33b29ea73  terminal/LEEME.md
+3758dcd3d8bf09305a819e42309f4330fe8642ba27ba01d5e7f47a3fe41b3bc6  terminal/lib/cierres/core.js
+231ea9ff9e4c783ed3239641f8e6420fb2df23c9fc6076e2c0737ac5461c478b  terminal/lib/cierres/figuras.js
+e22b665cbf869f182381de9cdf9b07456de957104252a0cb318b7779c695e68c  terminal/lib/curva/core_curva.js
+c08e832a21c96d2de6797f53a52f41881ba36b8d1bc6864cb799aba2cb5815ef  terminal/lib/curva/curve.js
+90a1572a2452d9e593dd22f8dfe4d7a43361574e80432180adb79c13c58906c3  terminal/lib/curva/prep.js
+816dffcd275b7e2e59ef667960e92c182546df5beccfc70499dbd06f00d3c9e1  terminal/lib/tf-geom.js
+fe58484b24523db0e9a67f457216eae0352c1648123f50216de1e2567d9e2ccb  terminal/lib/uniones/core_curva.js
+eb7dacc7b89e175554b2cc7a3ceb0c42867696ed3596fa74ebd60376a7800b3f  terminal/lib/uniones/curve.js
+90a1572a2452d9e593dd22f8dfe4d7a43361574e80432180adb79c13c58906c3  terminal/lib/uniones/prep.js
+ef657d9e61227aa10d2a49400687c912e43e132d620ebca7a4a479026081cfe0  terminal/transforma.js
+65828a92bdd7e05d70e8ee3c5d49e8f69694168fb60aad0b37e00ee43a22efb9  www/curva-g14.js
+84fa20d6f20355db243d35301539fc192005d3295916ea52c501d20893c5a939  www/index.html
+752053f2912c4c809474c0a242d350d9c7ddb456da8cfeae26d21bf0018d8df2  www/inversa-clases-3.js
+ed1d9db36711fafa89b5a44d1f98d01e4b9cc53f99392493a36059415316d83e  www/tf-movil2.js
+527bf042cec25325033043f0d0fec6a570c4c4168a74ebd218077e01ca9e7e47  www/tf-puntos-7.js
+1beb542f7e137923dfceb19b20db15788e243dd78515ccf5de2db477151fb9e4  www/tramos-v2.js
+```

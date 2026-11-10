@@ -60,4 +60,4 @@ Las condiciones (precio, regalías, plazo, soporte, desarrollos a medida) se acu
 ## 6. Versiones anteriores
 
 - La versión **1.0.0** (commit `bd0aa40`, 28 de octubre de 2026) se publicó sin licencia de uso: todos los derechos reservados.
-- Desde la versión **2.0.0** rige PolyForm Noncommercial 1.0.0 para todo el repositorio.
+- Desde la versión **2.0.0** (4 de noviembre de 2026) rige PolyForm Noncommercial 1.0.0 para todo el repositorio. La versión **2.1.0** (10 de noviembre de 2026) mantiene la misma licencia.

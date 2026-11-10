@@ -4,7 +4,7 @@ Herramientas que se encuadran en la tesis «TRANS-FORMA. De la superficie plana 
 
 ## 1. Web sin internet (carpeta `docs/`)
 - Abrir `index.html` con Chrome, Edge o Firefox. Arriba se elige la herramienta (Ctrl 1 · 2 · 3 · 4 · 5).
-- `index.html` necesita al lado sus tres archivos: `tramos-v2.js`, `inversa-clases-3.js` y `tf-puntos-5.js`. No hacen falta otras dependencias.
+- `index.html` necesita al lado sus cinco archivos: `curva-g14.js`, `tramos-v2.js`, `inversa-clases-3.js`, `tf-puntos-7.js` y `tf-movil2.js`. No hacen falta otras dependencias.
 - Las figuras guardadas quedan en ese navegador. Para pasarlas a otro equipo: Archivos → Exportar curva (.json).
 
 ## 2. Terminal (`TRANS-FORMA-terminal.zip`)
@@ -19,11 +19,11 @@ node transforma.js calcular mi_curva.json    # un .json exportado desde Curva li
 node transforma.js ayuda                     # todas las opciones
 ```
 
-Usa el motor de la versión 1.0.0, extraído sin cambios: Cierres, Uniones y Curva libre (clases A a E). Unión por tramos, Inversa y la operación F de Curva libre están solo en la web y en la app.
+Usa el motor de la versión 1.0.0, extraído sin cambios: Cierres, Uniones y Curva libre (clases A a E). Unión por tramos, Inversa y las operaciones F y G de Curva libre están solo en la web y en la app.
 
 ## 3. App de escritorio
-- **Linux**: `TRANS-FORMA-2.0.0-linux-x86_64.AppImage`. Darle permiso de ejecución (clic derecho → Propiedades → Permitir ejecutar, o `chmod +x`) y abrir con doble clic.
-- **Windows**: `TRANS-FORMA-2.0.0-windows-x64.zip`. Descomprimir en una carpeta (por ejemplo Documentos) y abrir `TRANS-FORMA.exe`. La primera vez Windows avisa «Windows protegió su PC» porque la app no está firmada: «Más información» → «Ejecutar de todas formas».
+- **Linux**: `TRANS-FORMA-2.1.0-linux-x86_64.AppImage`. Darle permiso de ejecución (clic derecho → Propiedades → Permitir ejecutar, o `chmod +x`) y abrir con doble clic.
+- **Windows**: `TRANS-FORMA-2.1.0-windows-x64.zip`. Descomprimir en una carpeta (por ejemplo Documentos) y abrir `TRANS-FORMA.exe`. La primera vez Windows avisa «Windows protegió su PC» porque la app no está firmada: «Más información» → «Ejecutar de todas formas».
 - Las exportaciones se guardan por defecto en Documentos/TRANS-FORMA (menú Archivo → Abrir carpeta de exportaciones).
 
 ### Instalador de Windows con ícono propio (opcional)
